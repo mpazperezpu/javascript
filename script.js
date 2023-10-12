@@ -2,7 +2,7 @@
 alert("Bienvenido a su Buscador de Vuelo");
 let apellidoDeLaReserva = "Perez Puentes";
 let numeroDeReserva = "45869";
-let infoReserva = ("Usted tiene un vuelo a Madrid el dia 12/12/2023 desde Ezeiza . \nVuelo aa3856.\nOperador Aerolineas Argentinas");
+let infoReserva = "Usted tiene un vuelo a Madrid el dia 12/12/2023 desde Ezeiza . \nVuelo aa3856.\nOperador Aerolineas Argentinas";
     
 function Buscador(){
     let ingreso= false
@@ -91,7 +91,11 @@ if (Buscador()){
                     
                     alert(`${contactos}`);
                     
-                 break;
+                    break;
+                default:
+                    alert("elegiste una opcion invalida");
+                    break;
+
             
         }
 }
