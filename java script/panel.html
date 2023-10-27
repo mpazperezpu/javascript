@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN VIAGGIO</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="maintitle">IN VIAGGIO</h1> 
+        <H4>Agencia de viajes</H4>
+    </header>
+    <main>
+        <div class="container1">
+            <h2>INFORMACION DE RESERVA</h2>
+            <p>Bienvenido Sr/Sra : </p>
+            <P id="apellidocliente"></P>
+            <p>"Usted tiene un vuelo a Madrid el dia 12/12/2023 desde Ezeiza . <br> <br>VUELO:aa3856.<BR> <br>Operador Aerolineas Argentinas"</p>
+            <img class= "madrid" src="https://th.bing.com/th?id=OIP.xh2nK3gWxr40rJp_GhTy4QHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+        <FORM>
+            <button class="gestionar">Gestionar Reserva</button>
+        </FORM>
+        </div>
+    <script>
+        document.getElementById("apellidocliente").innerHTML= localStorage.apellidocliente
+    </script> 
+    <script src="js/script.js"></script>      
+</body>
+</html>

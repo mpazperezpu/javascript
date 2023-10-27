@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-   <h1>Buscador de viaje</h1> 
-
-
+    <header>
+   <h1 class="maintitle">IN VIAGGIO</h1> 
+   <H4>Agencia de viajes</H4>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Localizador de Viaje</h2>
+            <form>
+                <label for="Apellido">Apellido de la Reserva</label>
+                <input type="text" id="Apellido" name="Apellido"><br><br>
+                <label for="Numero">Numero de Reserva</label>
+                <input type="text" id="Numero" name="Numero"> <br><br>
+                <button type="button" onclick="Buscador()">Buscar</button>
+            </form>
+            </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
