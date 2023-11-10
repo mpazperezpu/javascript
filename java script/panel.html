@@ -18,13 +18,17 @@
             <P id="apellidocliente"></P>
             <p>"Usted tiene un vuelo a Madrid el dia 12/12/2023 desde Ezeiza . <br> <br>VUELO:aa3856.<BR> <br>Operador Aerolineas Argentinas"</p>
             <img class= "madrid" src="https://th.bing.com/th?id=OIP.xh2nK3gWxr40rJp_GhTy4QHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
-        <FORM>
-            <button class="gestionar">Gestionar Reserva</button>
-        </FORM>
+            <h2>Gestion de Reserva</h2>
+
+            <button type="button" id="cambio">Presiona aqui para realizar un cambio</button>
+            <button type="button" id="cancelar">Presiona aqui para cancelar su vuelo</button>
         </div>
+        
+        
     <script>
         document.getElementById("apellidocliente").innerHTML= localStorage.apellidocliente
     </script> 
-    <script src="js/script.js"></script>      
+    <script src="js/script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
 </body>
 </html>

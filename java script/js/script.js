@@ -2,36 +2,36 @@ let apellidoDeLaReserva = "Perez Puentes";
 let numeroDeReserva = "45869";
 let infoReserva = "Usted tiene un vuelo a Madrid el dia 12/12/2023 desde Ezeiza . \nVuelo aa3856.\nOperador Aerolineas Argentinas";
 let buscar = {
-    Apellido:apellidoDeLaReserva,
-    Numero:numeroDeReserva,
+    Apellido :apellidoDeLaReserva,
+    Numero :numeroDeReserva
 };
-var json = JSON.stringify(buscar);
+let json = JSON.stringify(buscar);
 localStorage.setItem(numeroDeReserva,json);
 localStorage.setItem(apellidoDeLaReserva,json);
-console.log("buscando")
+let datosincorrectos= document.getElementById("info")
 function Buscador(){
+    console.log("click")
     let ingreso= false
     const ingresarApellido = document.getElementById("Apellido").value;
     const ingresoNumeroDeReserva = document.getElementById("Numero").value;
     ingreso=3
     for (i=ingreso; i >= 1; i--){
    if(ingresarApellido === apellidoDeLaReserva && ingresoNumeroDeReserva === numeroDeReserva) {
-    console.log(ingresarApellido,ingresoNumeroDeReserva)
     window.location.href="panel.html"
     localStorage.apellidocliente = ingresarApellido
     ingreso= true;
     }else{
-        alert("Los datos son incorrectos pruebe de nuevo")
-    }
+       datosincorrectos.innerHTML = "Datos incorrectos,intente nuevamente";
+       datosincorrectos.classList.add("aviso")
+     }
+}return ingreso;
 }
-    return ingreso;
-        
-}
-function redireccionar(){
-    window.location.href="gestionar.html"
-}
-const button = document.querySelector('#gestionar');
-button.addEventListener("click",redireccionar);
-    
+const boton = document.querySelector("#Buscar")
+boton.addEventListener("click", {
+ handleEvent: function(event) {
+    Buscador();
+  }
+});
+
     
 
